@@ -1,0 +1,34 @@
+{
+  "name": "web3rsvp-subgraph",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ brizism/web3-rsvp",
+    "create-local": "graph create --node http://localhost:8020/ brizism/web3-rsvp",
+    "remove-local": "graph remove --node http://localhost:8020/ brizism/web3-rsvp",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 brizism/web3-rsvp"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.32.0",
+    "@graphprotocol/graph-ts": "0.27.0",
+    "@protofire/subgraph-toolkit": "^0.1.2"
+  },
+  "description": "This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.",
+  "version": "1.0.0",
+  "main": "hardhat.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brizism/web3rsvp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/brizism/web3rsvp/issues"
+  },
+  "homepage": "https://github.com/brizism/web3rsvp#readme"
+}
